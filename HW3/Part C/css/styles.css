@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+}
+.pizza-container {
+    position: relative;
+    width: 550px;
+    height: 550px;
+    margin: 20px auto;
+}
+
+.pizza-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.pizza-options{
+    border: 2px solid black;
+    padding: 10px;
+}
