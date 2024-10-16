@@ -9,7 +9,7 @@ function madlib(){
 
     var presenttenseverb = document.getElementById('presenttenseverb').value;
     var defaultpresenttenseverb = "stirring";
-    var inputnoun = (presenttenseverb || defaultpresenttenseverb);    
+    var inputpresenttenseverb = (presenttenseverb || defaultpresenttenseverb);    
 
     var animal = document.getElementById('animal').value;
     var defaultanimal = "mouse";
@@ -27,11 +27,11 @@ function madlib(){
     var defaultperson = "St. Nicholas";
     var inputperson = (person || defaultperson);
     
-    document.getElementById('madlib').innerText = "’Twas the night before " + inputholiday + ","
-    "when all through the " +inputnoun+  
-    "Not a creature was " + presenttenseverb+ "," 
-    "Not even a/n " + inputanimal + " ;"
-    "The " +inputpluralnoun+ " were hung by the "+inputnoun2+ " with care"
+    document.getElementById('madlib').innerText = "’Twas the night before " + inputholiday + ", \n " + 
+    " when all through the " + inputnoun +  
+    " \nNot a creature was " + inputpresenttenseverb+ ", \n" +
+    "Not even a/n " + inputanimal + ";\n" +
+    "The " +inputpluralnoun+ " were hung by the "+inputnoun2+ " with care\n" +
     "In hopes that "+ inputperson+ " soon would be there!"
 
 }
