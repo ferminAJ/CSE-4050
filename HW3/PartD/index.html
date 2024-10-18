@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hw3 PartD</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Fermin's Ice Cream Sundae Shoppe</h1>
+    <div class="ice-container" id="ice">
+        <img src="assets/background.png" id="background" alt="Background">
+        <img src="assets/vanilla_icecream.png" id="ice-cream" alt="Ice-cream">
+        <img src="assets/bowl.png" id="bowl" alt="Bowl">
+        <img src="" id="banana" alt="Banana" style="display: none;">
+        <img src="" id="sprinkles" alt="Sprinkles" style="display: none;">
+        <img src="" id="cherry" alt="Cherry" style="display: none;">
+
+    </div>
+
+    <div>
+        <div>
+            <h3>Choose Your Ice Cream Flavor</h3>
+            <label>
+                <input type="radio" name="ice-cream" value="vanilla" onclick="updateCream('ice-cream', 'vanilla_icecream.png')" checked> Vanilla
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="ice-cream" value="chocolate" onclick="updateCream('ice-cream', 'chocolate_icecream.png')"> Chocolate
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="ice-cream" value="strawberry" onclick="updateCream('ice-cream', 'strawberry_icecream.png')"> Stawberry
+            </label>
+        </div>
+
+        <div>
+            <h3>Choose Your Sauce</h3>
+            
+            <br>
+            <label>
+                <input type="radio" name="sauce" value="chocolate-sauce" onclick="updateCream('sauce', 'chocolate_sauce.png')"> Chocolate Sauce
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="sauce" value="caramel" onclick="updateCream('sauce', 'caramel_sauce.png')"> Caramel Sauce
+            </label>
+        </div>
+
+        <div>
+            <h3>Add Your Toppings</h3>
+            <label>
+                <input type="checkbox" name="topping" value="banana" onclick="toggleTopping('banana', 'banana.png')"> Banana
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="topping" value="sprinkles" onclick="toggleTopping('sprinkles', 'sprinkles.png')"> Sprinkles
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="topping" value="cherry" onclick="toggleTopping('cherry', 'cherry.png')"> Cherry
+            </label>
+        </div>
+    </div>
+
+
+    <script src="java/script.js"> </script>
+</body>
+</html>
