@@ -4,6 +4,9 @@ function updateCream(layer, imagePath){
     imgElement.style.display = "block";
 }
 
+
+
+
 function toggleTopping(toppingID, imagePath){
     const toppingElement = document.getElementById(toppingID);
     if (
