@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hw3 Part C</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="assets" href="assets/">
+</head>
+<body>
+    <h1>Fermin's Pizza Shoppe</h1>
+    <div class="pizza-container" id="pizza">
+        <img src="assets/crust-regular.png" id="crust" alt="Crust">
+        <img src="assets/sauce-red.png" id="sauce" alt="Sauce">
+        <img src="assets/cheese.png" id="cheese" alt="Cheese">
+        <img src="" id="topping-pepperoni" alt="pepperoni" style="display: none;">
+        <img src="" id="topping-sausage" alt="sausage" style="display: none;">
+        <img src="" id="topping-mushrooms" alt="mushrooms" style="display: none;">
+        <img src="" id="topping-olives" alt="olives" style="display: none;">
+    </div>
+
+    <div class="container">
+        <div class="pizza-options">
+            <h3>Choose Your Crust</h3>
+            <label>
+                <input type="radio" name="crust" value="regular" onclick="updatePizza('crust', 'crust-regular.png')" checked> Regular
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="crust" value="thin" onclick="updatePizza('crust', 'crust-thin.png')"> Thin
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="crust" value="stuffed" onclick="updatePizza('crust', 'crust-stuffed.png')"> Stuffed
+            </label>
+        </div>
+        <br>
+
+        <div class="pizza-options">
+            <h3>Choose your Sauce</h3>
+            <label>
+                <input type="radio" name="sauce" value="tomato" onclick="updatePizza('sauce', 'sauce-red.png')" checked> Tomato Sauce
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="sauce" value="white" onclick="updatePizza('sauce', 'sauce-white.png')"> White Sauce
+            </label>
+        </div>
+        <br>
+
+        <div class="pizza-options">
+            <h3>Add your Toppings</h3>
+            <label>
+                <input type="checkbox" name="topping" value="pepperoni" onclick="toggleTopping('topping-pepperoni', 'pepperoni.png')"> Pepperoni
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="topping" value="sausage" onclick="toggleTopping('topping-sausage', 'sausage.png')"> Sausage
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="topping" value="mushrooms" onclick="toggleTopping('topping-mushrooms', 'mushrooms.png')"> Mushrooms
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="topping" value="olives" onclick="toggleTopping('topping-olives', 'olives.png')"> Olives
+            </label>
+        </div>
+    </div>
+    <script src="java/script.js"></script>
+</body>
+</html>
