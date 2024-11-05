@@ -9,7 +9,8 @@
 </head>
 <body>
     <h1>Fermin's Pizza Shoppe</h1>
-    <div class="pizza-container" id="pizza">
+    <div class="page1">
+        <div class="pizza-container" id="pizza">
         <img src="assets/crust-regular.png" id="crust" alt="Crust">
         <img src="assets/sauce-red.png" id="sauce" alt="Sauce">
         <img src="assets/cheese.png" id="cheese" alt="Cheese">
@@ -17,6 +18,7 @@
         <img src="" id="topping-sausage" alt="sausage" style="display: none;">
         <img src="" id="topping-mushrooms" alt="mushrooms" style="display: none;">
         <img src="" id="topping-olives" alt="olives" style="display: none;">
+        <img src="" id="topping-sardines" alt="sardines" style="display: none;">
     </div>
 
     <div class="container">
@@ -45,6 +47,10 @@
             <label>
                 <input type="radio" name="sauce" value="white" onclick="updatePizza('sauce', 'sauce-white.png')"> White Sauce
             </label>
+            <br>
+            <label>
+                <input type="radio" name="sauce" value="pesto" onclick="updatePizza('sauce', 'sauce-pesto.png')">Pesto Sauce
+            </label>
         </div>
         <br>
 
@@ -65,8 +71,15 @@
             <label>
                 <input type="checkbox" name="topping" value="olives" onclick="toggleTopping('topping-olives', 'olives.png')"> Olives
             </label>
+            <br>
+            <label>
+                <input type="checkbox" name="topping" value="sardines" onclick="toggleTopping('topping-sardines', 'sardines.png')">Sardines
+            </label>
         </div>
     </div>
+
+    </div>
+    
     <script src="java/script.js"></script>
 </body>
 </html>
