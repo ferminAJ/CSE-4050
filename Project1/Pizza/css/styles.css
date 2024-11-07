@@ -21,3 +21,50 @@ h1{
     border: 2px solid black;
     padding: 10px;
 }
+
+.page-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.page1{
+    flex: 1;
+}
+
+.page2{
+    width: 35%;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+h2{
+    background-color: #ff6347;
+    columns: white;
+    padding: 20px 0;
+    font-size: 2em;
+}
+
+.item-cell{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.itme-image{
+    width: 100px;
+    height: 100px;
+}
+
+.item-description{
+    flex: 3;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.item-image img{
+    width: 100px;
+    height: 100px;
+}
