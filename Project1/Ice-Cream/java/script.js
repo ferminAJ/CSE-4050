@@ -17,6 +17,16 @@ function toggleTopping(toppingID, imagePath) {
   }
 }
 
+// Function to hide a specific layer by ID
+function hideLayer(layerId) {
+  const element = document.getElementById(layerId);
+  if (element) {
+    element.style.display = "none"; // Hides the element
+    element.src = ""; // Clears the source so no image is shown
+  }
+}
+
+
 function addToCart() {
   // Get the shopping cart container
   const cart = document.querySelector(".page2");
